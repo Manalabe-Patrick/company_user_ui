@@ -1,0 +1,29 @@
+<div>
+    <p><a routerLink="/"><button>Back</button></a>  <span class="page-title">User Company Details</span> </p> 
+</div> 
+
+<div *ngFor="let comp of company" class="company-container">
+    <p class="company-name">Company Name: {{ comp.name }}</p>
+    <p class="tin">TIN: {{ comp.tin }}</p>
+    <p class="email">Email: {{ comp.email }}</p>
+
+    <hr class="divider" />
+    <p class="subscription-title">Subscription</p>
+    <p class="plan">Plan: {{ comp.planName }}</p>
+    <p class="expiry-date">Expiry Date: {{ comp.dateExpired | date:'yyyy-MM-dd' }}</p>
+
+    <hr class="divider" />
+    <p class="billing-title">Billing</p>
+    <p class="date-created">Date Created: {{ comp.dateCreated | date:'yyyy-MM-dd' }}</p>
+    <p class="card">Card: {{ comp.card }}</p>
+
+    <hr class="divider" />
+    <p class="billing-cycle-title">Billing Cycle</p>
+    <p class="cycle-type">Cycle Type: {{ comp.cycleType }}</p>
+    <p class="status">Status: {{ comp.status }}</p>
+    <p class="cycle-date-created">Date Created: {{ comp.cycleDateCreated | date:'yyyy-MM-dd'}}</p>
+    <p class="payment-id">Payment Id: {{ comp.paymentId }}</p>
+</div>
+
+
+

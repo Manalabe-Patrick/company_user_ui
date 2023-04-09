@@ -1,0 +1,32 @@
+<table class="styled-table">
+    <caption>Users</caption>
+    <thead>
+        <tr>
+            <th>Last name</th>
+            <th>First name</th>
+            <th>Email</th>
+            <th>Last login</th>
+            <th>Active</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{ user.lastName }}</td>
+            <td>{{ user.firstName }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.dateAccessed | date:'yyyy-MM-dd HH:mm a'}}</td>
+            <td>{{ user.status }}</td>
+            <td class="actions">
+              <div>
+                <a [routerLink]="['/company', user.id]" [queryParams]="{view: 'true'}">   
+                  <button class="btn-view">View Company</button>
+                </a>
+                <button class="btn-del">Deactivate</button>
+              </div>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+  
+  

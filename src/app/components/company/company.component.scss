@@ -1,0 +1,126 @@
+caption, thead, tr, td, p, button{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+caption{
+    text-align: start;
+    margin: 10px 0;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    width: 95%;
+    margin: 0 auto;
+}
+
+.styled-table thead tr {
+    background-color: #48dbfb;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #48dbfb;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #48dbfb;
+}
+
+.actions{
+    width: 200px;
+}
+
+.actions button{
+    margin: 0 3px;
+}
+
+button{
+    border-style: none;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-view:hover{
+    background: #48dbfb;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-del:hover{
+    background: #ff6b6b;
+    color: white;
+    cursor: pointer;
+}
+
+.page-title{
+    margin-left: 20px;
+}
+
+.container{
+    margin: 35px 0;
+}
+
+.company-container{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 95%;
+    margin: 15px auto;
+    padding: 20px 0;
+}
+
+.company-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tin, .email, .plan, .expiry-date, .date-created, .card, .cycle-type, .status, .cycle-date-created, .payment-id {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #777;
+}
+
+.divider {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.subscription-title, .billing-title, .billing-cycle-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
